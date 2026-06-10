@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: mukta;
+}
+
+.caixa-imagem {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+   
+}
+
+.imagem-de-fundo {
+    min-width: 100vh;
+    min-height: 100vw;
+}
+
+.caixa-mascara {
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    /* ISTO SERVE PARA COLOCAR UMA MASCARA SOBRE O VIDEO, PARA DEIXAR O VIDEO MAIS ESCURO E AS COISAS DO SITE MAIS VISIVEIS, O LINEAR-GRADIENT SERVE PARA CRIAR UM GRADIENTE DE COR, O 109DEG SERVE PARA DEFINIR A DIREÇÃO DO GRADIENTE, OS RGBA SERVEM PARA DEFINIR AS CORES E A OPACIDADE DO GRADIENTE, O PRIMEIRO RGBA É A COR INICIAL DO GRADIENTE, O SEGUNDO RGBA É A COR DO MEIO DO GRADIENTE E O TERCEIRO RGBA É A COR FINAL DO GRADIENTE, OS PORCENTAGENS SERVEM PARA DEFINIR ONDE CADA COR VAI COMEÇAR E TERMINAR NO GRADIENTE */
+    width: 100%;
+    height: 100% ;
+    position: fixed;
+    top: 0;
+
+}
+
+h1 {
+    color: white;
+}
+
+p {
+    color: white;
+    font-size: 18px;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.cabecalho img {
+    width: 70px;
+}
+
+.cabecalho a {
+ color: white;
+ font-size: 24px;
+  text-decoration: none;
+}
+
+.cabecalho a:hover {
+    color: #C51111;
+    /* ISTO SERVE PARA MUDAR A COR DO TEXTO QUANDO O MOUSE PASSAR POR CIMA */
+    transition: 0.5s ease-in-out; 
+}

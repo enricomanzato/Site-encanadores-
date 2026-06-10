@@ -1,0 +1,218 @@
+* {
+    /* ESSE * SIGNIFICA QUE EU ESTOU SELECIONANDO TODA A PAGINA, ENTÃO TUDO QUE EU COLOCAR AQUI DENTRO VAI ALTERAR A PAGINA INTEIRA*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: mukta, sans-serif;
+     /* ISTO SERVE PARA MUDAR A FONTE DO SITE, O MUKTA É UMA FONTE QUE EU ESTOU USANDO, MAS VOCÊ PODE USAR QUALQUER FONTE QUE QUISER, O SANS-SERIF SERVE PARA CASO O NAVEGADOR DO USUÁRIO NÃO TENHA A FONTE MUKTA ELE USARÁ A FONTE SANS-SERIF QUE É UMA FONTE GENÉRICA QUE EXISTE EM TODOS OS NAVEGADORES */
+}
+
+button {
+    background-color: #C51111;
+    /* ISTO SERVE PARA MUDAR A COR DE FUNDO DO BOTÃO*/
+    color: white;
+    /* ISTO SERVE PARA MUDAR A COR DA ESCRITA DO BOTÃO */
+    width: 200px;
+    /* ISTO SERVE PARA ALTERAR LARGURA DO BOTÃO */
+    height: 50px;
+    /* ISTO SERVE PARA ALTERAR A ALTURA DO BOTÃO */
+    border: none;
+    /* ISTO SERVE PARA REMOVER A BORDA PRETA QUE FICA EM VOLTA DO BOTÃO */
+    border-radius: 3px;
+    /* ISTO SERVE PARA DEIXAR A BORDA DO BOTÃO MAIS ARREDONDADA */
+    font-weight: bold;
+    /* ISTO SERVE PARA DEIXAR A ESCRITA DE DENTRO DO BOTÃO MAIS "GORDINHA" */
+    cursor: pointer;
+    /* ISTO SERVE PARA QUANDO PASSAR O MOUSE SOBRE O BOTÃO ELE SE TRANFORMAR NA MÃOZINHA */
+    text-transform: uppercase;
+    /* ISTO SERVE PARA DEIXAR A ESCRITA DO BOTÃO EM CAIXA ALTA */
+    margin-top: 30px;
+     /* ISTO SERVE PARA DAR UM ESPAÇAMENTO ENTRE O TEXTO E O BOTÃO, O VALOR DE 130PX FOI ESCOL*/
+}
+
+.logo-mario {
+    width: 350px;
+}
+
+.logo-luigi {
+    width: 500px;
+}
+
+.caixa-texto {
+    width: 40%;
+}
+
+body {
+    height: 100vh;
+    /* ESTE HEIGHT EM 100VH SERVE PARA QUE MEU BODY PREENCHA TODA A TELA */
+
+}
+
+.caixa-principal {
+    display: flex;
+    /* O DISPLAY FLEX SERVE PARA SEPARAR AS DIV NA HORIZONTAL */
+    align-items: center;
+    /* ISTO SERVE PARA DEIXAR AS COISAS DO BODY ALINHADAS NO CENTRO */
+    justify-content: space-around;
+    /* ISTO SERVE PARA DAR UM ESPAÇAMENTO ENTRE UMA CAIXA E A OUTRA, TENDO VARIAS FORMAS DE ESPAÇAMENTO, TEMOS QUE IR TESTANDO ESSAS FORMAS ATÉ ACHAR ALGUMA QUE SE ENQUADRE */
+    height: 100vh;
+    /* ESTE WIDTH EM 100% SERVE PARA QUE MEU CONTAINER PREENCHA TODA A LARGURA DA TELA */
+    padding: 100px;
+}
+
+.caixa-video {
+    position: fixed;
+    /* ISTO SERVE PARA DEIXAR O VIDEO FIXO NA TELA, ENTÃO ELE VAI FICAR POR TRÁS DE TODAS AS OUTRAS COISAS */
+    top: 0;
+    /* ISTO SERVE PARA COLOCAR O VIDEO NO TOPO DA TELA */
+    z-index: -1;
+    /* ISTO SERVE PARA COLOCAR O VIDEO POR TRÁS DE TODAS AS OUTRAS COISAS, ENTÃO ELE VAI FICAR COMO SE FOSSE O FUNDO DO SITE */
+}
+
+video {
+    min-width: 100vw;
+    /* ESTE WIDTH EM 100VW SERVE PARA QUE MEU VIDEO PREENCHA TODA A LARGURA DA TELA */
+    min-height: 100vh;
+}
+
+.caixa-mascara {
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    /* ISTO SERVE PARA COLOCAR UMA MASCARA SOBRE O VIDEO, PARA DEIXAR O VIDEO MAIS ESCURO E AS COISAS DO SITE MAIS VISIVEIS, O LINEAR-GRADIENT SERVE PARA CRIAR UM GRADIENTE DE COR, O 109DEG SERVE PARA DEFINIR A DIREÇÃO DO GRADIENTE, OS RGBA SERVEM PARA DEFINIR AS CORES E A OPACIDADE DO GRADIENTE, O PRIMEIRO RGBA É A COR INICIAL DO GRADIENTE, O SEGUNDO RGBA É A COR DO MEIO DO GRADIENTE E O TERCEIRO RGBA É A COR FINAL DO GRADIENTE, OS PORCENTAGENS SERVEM PARA DEFINIR ONDE CADA COR VAI COMEÇAR E TERMINAR NO GRADIENTE */
+    width: 100%;
+    height: 100% ;
+    position: fixed;
+    top: 0;
+   
+}
+
+p {
+    color: white;
+    /* ISTO SERVE PARA MUDAR A COR DO TEXTO */
+   font-size: 18px;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.cabecalho img {
+    width: 70px;
+}
+
+.cabecalho a {
+ color: white;
+ font-size: 24px;
+  text-decoration: none;
+}
+
+.cabecalho a:hover {
+    color: #C51111;
+    /* ISTO SERVE PARA MUDAR A COR DO TEXTO QUANDO O MOUSE PASSAR POR CIMA */
+    transition: 0.5s ease-in-out; 
+}
+
+.link-whatsapp img {
+    width: 50px;
+}
+
+.caixa-link-whatsapp {
+    position: fixed;
+    bottom: 15px;
+    right: 12px;
+}
+
+form {
+    background-color: white;
+    position: fixed;
+    top: 40%;
+    left: -340px;
+
+    /* 
+    Posição final
+    left: 50%;
+    transform:translateX(-50%) ; 
+    */
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 3px;
+    width: 350px;
+    z-index: 1;
+    transition: 0.5s left ease-in-out; 
+}
+
+form input {
+    height: 40px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    outline-color: #18d80f;
+}
+
+form textarea {
+    height: 40px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    outline-color: #18d80f;
+    height: 100px;
+}
+
+.mascara-formulario {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0  ;
+    background: linear-gradient(109deg,rgba(10, 12, 16, 0.99) 15%,rgba(10, 12, 16, 0.7) 50%,rgba(10, 12, 16, 0.99) 85%);
+    visibility: hidden;
+    transition: 0.5s visibility ease-in-out;
+}
+
+@media (max-width: 1100px) {
+    .logo-mario {
+        display: none;
+    }
+
+    .caixa-principal {
+        padding: 30px;
+        flex-direction: column;
+    }
+
+    .caixa-texto {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-luigi {
+        height: auto;
+        width: 80%;
+    }
+
+    .caixa-imagem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cabecalho {
+        padding: 10px;
+    }
+
+    .cabecalho a {
+        font-size: 16px;
+    }
+
+    .cabecalho img {
+        width: 40px;
+    }
+    
+}

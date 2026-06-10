@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Mario & Luigi</title>
+</head>
+
+<body>
+
+    <div class="cabecalho">
+        <img src="./img/logo-header.png" alt="imagem-cabecalho">
+        <a>Home</a>
+        <a class="fale-conosco" onclick="mostrarFaleConosco()">Fale Conosco</a>
+        <a href="nossosServicos.html">Nossos Serviços</a>
+    </div>
+
+    <div class="caixa-principal">
+        <div class="caixa-texto"> <!-- A TAG DIV SERVE PARA SEPARAR AS COISAS EM "CAIXAS"-->
+            <img src="./img/logo.png" alt="logo-site-mario" class="logo-mario">
+
+            <p>
+                🔧 Encanadores Mario & Luigi - Resolvendo seus problemas hidraulicos com estilo!🔧
+            </p>
+            <p> Você já se encontrou em uma situação de emergência com encanamento ?
+                Vazamentos inesperados, canos entupidos ou torneiras que não param de pingar ?
+                Não se preocupe, pois estamos aqui para salvar o seu dia! Apresentamos a vocês os encanadores mais
+                famosos do
+                reino do cogumelo - Mario e Luigi!
+            </p>
+
+            <button onclick="mostrarForm()">Entre em contato</button>
+        </div>
+
+        <div class="caixa-imagem">
+            <img src="./img/mario.png" alt="logo-mario-luigi" class="logo-luigi">
+            <!-- A TAG class serve para diferenciarmos a mesma TAG, exemplo: Se tivermos duas TAGS img para diferenciarmos essa TAG uma da outra usamos a TAG class e colocamos o nome que queremos  -->
+        </div>
+    </div>
+
+
+    <div class="caixa-video">
+        <video src="./img/video.mp4" autoplay loop muted></video>
+        <div class="caixa-mascara"></div>
+    </div>
+
+    <div class="caixa-link-whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=5544999791765&text=Ol%C3%A1%2C%20gostaria%20de%20criar%20um%20site"
+            class="link-whatsapp">
+            <img src="./img/whatsapp.png" alt="botao-whatsapp">
+        </a>
+    </div>
+
+    <form action="https://formcarry.com/s/vecOCIuk0Ba" method="POST" enctype="multipart/form-data" class="formulario">
+        <input placeholder="Seu nome" type="text" name="nome"/>
+        <input placeholder="Seu e-mail" type="email" name="email" />
+        <textarea placeholder="Digite aqui seu problema..." name="problema"></textarea>
+        <button>Enviar seu orçamento</button>
+    </form>
+
+    <div class="mascara-formulario" onclick="esconderForm()"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
